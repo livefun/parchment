@@ -13,14 +13,14 @@ parchment
 
 
 #主要技术
- 1.语言 -- python
+ 1. 语言 -- python
 
- 2.web框架 -- flask
+ 2. web框架 -- flask
 
- 3.DB -- mongodb
+ 3. DB -- mongodb
 
- 4.cache -- redis
+ 4. cache -- redis
 
- 5.wsgi server -- gunicorn & gevent
+ 5. wsgi server -- gunicorn & gevent
 
- 6.proxy & static server -- nginx
+ 6. proxy & static server -- nginx
