@@ -2,7 +2,7 @@ parchment
 ====
 
 #what's this?
-顾名思义 parchment是用来记录的~ 
+顾名思义 parchment 一种记录工具 一种存储数据的载体~ 
 
 记录遇到的问题，解决问题的方法 and more
 
