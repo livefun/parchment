@@ -4,8 +4,6 @@ from flask_principal import Principal, Permission, UserNeed, RoleNeed, Identity,
 from datetime import datetime
 import simplejson as json
 
-
-
 from logging import Formatter
 import logging.handlers,logging
 
@@ -13,6 +11,7 @@ LOG_FILENAME = 'logs/blog.log'
 handler = logging.handlers.RotatingFileHandler(LOG_FILENAME, maxBytes=100000000, backupCount=5)
 handler.setFormatter(Formatter('%(asctime)s - %(name)s - %(levelname)s - %(process)d - Line:%(lineno)d - %(message)s'))
 
+__name__ = 'blog'
 app = Flask(__name__,static_folder='static', template_folder='templates')
 app.logger.setLevel(logging.DEBUG)
 app.logger.addHandler(handler)
@@ -57,6 +56,10 @@ def before_request():
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    return render_template('index.html')
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
     return render_template('index.html')
 
 if __name__ == '__main__':
