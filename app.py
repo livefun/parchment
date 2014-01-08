@@ -11,11 +11,10 @@ LOG_FILENAME = 'logs/blog.log'
 handler = logging.handlers.RotatingFileHandler(LOG_FILENAME, maxBytes=100000000, backupCount=5)
 handler.setFormatter(Formatter('%(asctime)s - %(name)s - %(levelname)s - %(process)d - Line:%(lineno)d - %(message)s'))
 
-__name__ = 'blog'
-app = Flask(__name__,static_folder='static', template_folder='templates')
+app = Flask("parchment",static_folder='static', template_folder='templates')
 app.logger.setLevel(logging.DEBUG)
 app.logger.addHandler(handler)
-app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
+app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?R1'
 
 
 # load the extension
@@ -47,9 +46,6 @@ def internal_server_error(e):
 @app.before_request
 def before_request():
     """Make sure we are connected to the database each request."""
-    #p = request.path.split(".")
-    #plist = ["js","css","png","ico"]
-    #if request.path != '/auth' and request.path != "/login" and p[len(p)-1] not in plist:
     if 'index' in request.path :
         return index()
     app.logger.info("request path:  %s" %(request.path))
@@ -58,9 +54,9 @@ def before_request():
 def index():
     return render_template('index.html')
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/add', methods=['GET', 'POST'])
 def login():
-    return render_template('index.html')
+    return render_template('add.html')
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8090)
