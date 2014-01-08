@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block body %}
+<style>
+    #editor
+    {
+        padding: 10px;
+        height:600px;
+    };
+</style>
+<div id="editor">
+    <form action="#" method="post">
+        <textarea cols="60" id="content" name="content" rows="30"></textarea>
+        <br>
+        <p class="test-center">
+        <button type="submit" class="btn btn-default">发布</button>
+        <button type="button" class="btn btn-default">预览</button>
+        </p>
+    </form>
+</div>
+<!-- row marketing-->
+{% endblock %}
+{% block javascript %}
+<script src="{{ url_for('static', filename='ckeditor/ckeditor.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+<script src="{{ url_for('static', filename='js/ckeditor.js') }}"></script>
+
+<script>
+    CKEDITOR.disableAutoInline = true;
+    $( document ).ready( function() {
+        $( '#content' ).ckeditor(); 
+    } );
+</script> 
+{% endblock %}

@@ -1,0 +1,138 @@
+{% extends "layout.html" %}
+{% block body %}
+  <div class="row marketing">
+        <div class="col-lg-8">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h2>这是我的第一篇文章</h2>
+                    <p>01-06 2014</p>
+                    <p>
+                        分类: <strong>生活随想</strong>
+                    </p>
+
+                    <p class="lead">
+                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    </p>
+                </div>
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-share-alt"></span>
+                                阅读全文
+                            </a>
+                        </div>
+                        <div class="col-lg-5 col-md-offset-2">
+                            <p class="text-left">
+                                <span class="label label-info">java</span>
+                                <span class="label label-info">python</span>
+                                <span class="label label-info">linux</span>
+                                <span class="label label-info">nosql</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h2>这是我的第二篇文章</h2>
+                    <p>01-06 2014</p>
+                    <p>
+                        分类: <strong>生活随想</strong>
+                    </p>
+
+                    <p class="lead">
+                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    </p>
+                </div>
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-share-alt"></span>
+                                阅读全文
+                            </a>
+                        </div>
+                        <div class="col-lg-5 col-md-offset-2">
+                            <p class="text-right">
+                                <span class="label label-info">java</span>
+                                <span class="label label-info">python</span>
+                                <span class="label label-info">linux</span>
+                                <span class="label label-info">nosql</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h2>这是我的第三篇文章</h2>
+                    <p>01-06 2014</p>
+                    <p>
+                        分类:
+                        <strong>生活随想</strong>
+                    </p>
+
+                    <p class="lead">
+                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    </p>
+                </div>
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-share-alt"></span>
+                                阅读全文
+                            </a>
+                        </div>
+                        <div class="col-lg-5 col-md-offset-2">
+                            <p class="text-right">
+                                <span class="label label-info">java</span>
+                                <span class="label label-info">python</span>
+                                <span class="label label-info">linux</span>
+                                <span class="label label-info">nosql</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            <div class="my_panel">
+                <p class="lead">
+                    <img src="{{ url_for('static', filename='img/map.png') }}" alt="..." class="img-rounded">
+                    <p>
+                        This is a simple blog...
+         @@!$!$!$
+                    </p>
+                </p>
+                <span class="glyphicon glyphicon-list-alt"></span>
+                <strong>分类</strong>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">java</a>
+                    <a href="#" class="list-group-item">python</a>
+                    <a href="#" class="list-group-item">linux</a>
+                    <a href="#" class="list-group-item">mac</a>
+                    <a href="#" class="list-group-item">html5</a>
+                </div>
+            </p>
+            <span class="glyphicon glyphicon-tags"></span>
+            <strong>tags</strong>
+            <p>
+                <span class="label label-info">java</span>
+                <span class="label label-info">python</span>
+                <span class="label label-info">linux</span>
+                <span class="label label-info">nosql</span>
+            </p>
+        </div>
+    </div>
+</div>
+<!-- row marketing--> 
+{% endblock %}
+{% block javascript %}
+<script src="{{ url_for('static', filename='js/jquery.pin.js') }}"></script>
+<script type="text/javascript">
+    $(".my_panel").pin();
+</script>
+{% endblock %}

@@ -1,0 +1,748 @@
+2014-01-08 11:21:12,951 - parchment - INFO - 1113 - Line:54 - request path:  /
+2014-01-08 11:21:13,203 - parchment - INFO - 1113 - Line:54 - request path:  /favicon.ico
+2014-01-08 11:21:13,204 - parchment - ERROR - 1113 - Line:1306 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1253, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1213, in handle_http_exception
+    return handler(e)
+  File "app.py", line 40, in access_notfound
+    return render_template('errors.html', message='The requested URL was not found on the server. '), 404
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 124, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 61, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: errors.html
+2014-01-08 11:21:15,239 - parchment - INFO - 1113 - Line:54 - request path:  /
+2014-01-08 11:21:15,359 - parchment - INFO - 1113 - Line:54 - request path:  /favicon.ico
+2014-01-08 11:21:15,359 - parchment - ERROR - 1113 - Line:1306 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1253, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1213, in handle_http_exception
+    return handler(e)
+  File "app.py", line 40, in access_notfound
+    return render_template('errors.html', message='The requested URL was not found on the server. '), 404
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 124, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 61, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: errors.html
+2014-01-08 11:41:41,488 - parchment - INFO - 1468 - Line:51 - request path:  /
+2014-01-08 11:41:41,562 - parchment - INFO - 1468 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 11:41:41,573 - parchment - INFO - 1468 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 11:41:41,574 - parchment - INFO - 1468 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 11:41:41,576 - parchment - INFO - 1468 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 11:41:41,577 - parchment - INFO - 1468 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 11:41:41,579 - parchment - INFO - 1468 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 11:41:41,580 - parchment - INFO - 1468 - Line:51 - request path:  /images/map.png
+2014-01-08 11:41:41,581 - parchment - ERROR - 1468 - Line:1306 - Exception on /images/map.png [GET]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1253, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1213, in handle_http_exception
+    return handler(e)
+  File "app.py", line 40, in access_notfound
+    return render_template('errors.html', message='The requested URL was not found on the server. '), 404
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 124, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 61, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: errors.html
+2014-01-08 11:41:41,789 - parchment - INFO - 1468 - Line:51 - request path:  /static/fonts/glyphicons-halflings-regular.woff
+2014-01-08 11:41:41,982 - parchment - INFO - 1468 - Line:51 - request path:  /static/img/icon.png
+2014-01-08 11:41:47,408 - parchment - INFO - 1468 - Line:51 - request path:  /
+2014-01-08 11:41:47,431 - parchment - INFO - 1468 - Line:51 - request path:  /images/map.png
+2014-01-08 11:41:47,432 - parchment - ERROR - 1468 - Line:1306 - Exception on /images/map.png [GET]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1253, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1213, in handle_http_exception
+    return handler(e)
+  File "app.py", line 40, in access_notfound
+    return render_template('errors.html', message='The requested URL was not found on the server. '), 404
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 124, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 61, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: errors.html
+2014-01-08 11:44:41,197 - parchment - INFO - 1468 - Line:51 - request path:  /
+2014-01-08 11:44:41,233 - parchment - INFO - 1468 - Line:51 - request path:  /static/img/map.png
+2014-01-08 11:44:41,235 - parchment - INFO - 1468 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 11:44:41,237 - parchment - INFO - 1468 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 11:44:41,238 - parchment - INFO - 1468 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 11:44:41,239 - parchment - INFO - 1468 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 11:44:41,241 - parchment - INFO - 1468 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 11:44:41,242 - parchment - INFO - 1468 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 11:47:25,563 - parchment - INFO - 1468 - Line:51 - request path:  /
+2014-01-08 11:47:25,594 - parchment - INFO - 1468 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 11:47:25,596 - parchment - INFO - 1468 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 11:47:25,597 - parchment - INFO - 1468 - Line:51 - request path:  /static/img/map.png
+2014-01-08 11:47:25,598 - parchment - INFO - 1468 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 11:47:25,600 - parchment - INFO - 1468 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 11:47:25,601 - parchment - INFO - 1468 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 11:47:25,604 - parchment - INFO - 1468 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 14:46:21,350 - parchment - INFO - 3869 - Line:51 - request path:  /add
+2014-01-08 14:46:21,403 - parchment - INFO - 3869 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 14:46:21,418 - parchment - INFO - 3869 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 14:46:23,421 - parchment - INFO - 3869 - Line:51 - request path:  /add
+2014-01-08 14:47:55,770 - parchment - INFO - 3869 - Line:51 - request path:  /add
+2014-01-08 14:48:35,367 - parchment - INFO - 3869 - Line:51 - request path:  /add
+2014-01-08 14:48:35,401 - parchment - INFO - 3869 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 14:48:35,403 - parchment - INFO - 3869 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 14:48:35,404 - parchment - INFO - 3869 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 14:48:35,405 - parchment - INFO - 3869 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 14:48:35,407 - parchment - INFO - 3869 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 14:48:35,408 - parchment - INFO - 3869 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 14:48:35,409 - parchment - INFO - 3869 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 14:48:35,411 - parchment - INFO - 3869 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 14:50:34,409 - parchment - INFO - 3869 - Line:51 - request path:  /add
+2014-01-08 14:50:34,439 - parchment - INFO - 3869 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 14:50:34,441 - parchment - INFO - 3869 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 14:50:34,442 - parchment - INFO - 3869 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 14:50:34,444 - parchment - INFO - 3869 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 14:50:34,445 - parchment - INFO - 3869 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 14:50:34,446 - parchment - INFO - 3869 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 14:50:34,448 - parchment - INFO - 3869 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 14:50:34,449 - parchment - INFO - 3869 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 14:57:06,744 - parchment - INFO - 3869 - Line:51 - request path:  /add
+2014-01-08 14:57:06,778 - parchment - INFO - 3869 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 14:57:06,780 - parchment - INFO - 3869 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 14:57:06,781 - parchment - INFO - 3869 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 14:57:06,782 - parchment - INFO - 3869 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 14:57:06,784 - parchment - INFO - 3869 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 14:57:06,785 - parchment - INFO - 3869 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 14:57:06,786 - parchment - INFO - 3869 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 14:57:31,223 - parchment - INFO - 4053 - Line:51 - request path:  /add
+2014-01-08 14:57:31,259 - parchment - INFO - 4053 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 14:57:31,266 - parchment - INFO - 4053 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 14:57:31,267 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 14:57:31,269 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 14:57:31,270 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 14:57:31,271 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 14:57:31,273 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 14:57:55,069 - parchment - INFO - 4053 - Line:51 - request path:  /add
+2014-01-08 14:57:55,099 - parchment - INFO - 4053 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 14:57:55,101 - parchment - INFO - 4053 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 14:57:55,102 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 14:57:55,104 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 14:57:55,105 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 14:57:55,106 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 14:57:55,108 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 14:58:11,164 - parchment - INFO - 4053 - Line:51 - request path:  /add
+2014-01-08 14:58:11,185 - parchment - INFO - 4053 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 14:58:11,187 - parchment - INFO - 4053 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 14:58:11,188 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 14:58:11,189 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 14:58:11,190 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 14:58:11,192 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 14:58:41,210 - parchment - INFO - 4053 - Line:51 - request path:  /add
+2014-01-08 14:58:41,251 - parchment - INFO - 4053 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 14:58:41,253 - parchment - INFO - 4053 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 14:58:41,254 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 14:58:41,255 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 14:58:41,257 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 14:58:41,260 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 14:58:41,262 - parchment - INFO - 4053 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 14:58:41,265 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 14:58:41,364 - parchment - INFO - 4053 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 14:58:48,803 - parchment - INFO - 4069 - Line:51 - request path:  /add
+2014-01-08 14:58:48,840 - parchment - INFO - 4069 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 14:58:48,847 - parchment - INFO - 4069 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 14:58:48,848 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 14:58:48,849 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 14:58:48,851 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 14:58:48,852 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 14:58:48,853 - parchment - INFO - 4069 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 14:58:48,855 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 14:58:48,899 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 14:58:55,391 - parchment - INFO - 4069 - Line:51 - request path:  /login
+2014-01-08 14:58:55,392 - parchment - ERROR - 4069 - Line:1306 - Exception on /login [GET]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1253, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1213, in handle_http_exception
+    return handler(e)
+  File "app.py", line 40, in access_notfound
+    return render_template('errors.html', message='The requested URL was not found on the server. '), 404
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 124, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 61, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: errors.html
+2014-01-08 14:59:02,454 - parchment - INFO - 4069 - Line:51 - request path:  /
+2014-01-08 14:59:22,996 - parchment - INFO - 4069 - Line:51 - request path:  /
+2014-01-08 14:59:23,018 - parchment - INFO - 4069 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 14:59:23,020 - parchment - INFO - 4069 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 14:59:23,021 - parchment - INFO - 4069 - Line:51 - request path:  /static/img/map.png
+2014-01-08 14:59:23,023 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 14:59:23,025 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 14:59:23,027 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 14:59:23,028 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 14:59:23,030 - parchment - INFO - 4069 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 14:59:23,031 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 14:59:23,067 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:00:11,799 - parchment - INFO - 4069 - Line:51 - request path:  /add
+2014-01-08 15:00:30,109 - parchment - INFO - 4069 - Line:51 - request path:  /add
+2014-01-08 15:00:30,132 - parchment - INFO - 4069 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 15:00:30,135 - parchment - INFO - 4069 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 15:00:30,137 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:00:30,139 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:00:30,141 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:00:30,143 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 15:00:30,145 - parchment - INFO - 4069 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:00:30,147 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:00:30,184 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:00:46,137 - parchment - INFO - 4069 - Line:51 - request path:  /add
+2014-01-08 15:00:46,164 - parchment - INFO - 4069 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 15:00:46,166 - parchment - INFO - 4069 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 15:00:46,168 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:00:46,170 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:00:46,172 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:00:46,174 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 15:00:46,175 - parchment - INFO - 4069 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:00:46,176 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:00:46,221 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:00:56,991 - parchment - INFO - 4069 - Line:51 - request path:  /add
+2014-01-08 15:00:57,013 - parchment - INFO - 4069 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 15:00:57,015 - parchment - INFO - 4069 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 15:00:57,016 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:00:57,018 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:00:57,019 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:00:57,021 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 15:00:57,022 - parchment - INFO - 4069 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:00:57,023 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:00:57,063 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:01:04,201 - parchment - INFO - 4069 - Line:51 - request path:  /add
+2014-01-08 15:01:04,221 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:01:04,223 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:01:04,224 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:01:04,225 - parchment - INFO - 4069 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 15:01:04,226 - parchment - INFO - 4069 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:01:14,798 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:01:14,830 - parchment - INFO - 4114 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:01:14,838 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:01:48,460 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:01:48,496 - parchment - INFO - 4114 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 15:01:48,497 - parchment - INFO - 4114 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 15:01:48,498 - parchment - INFO - 4114 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:01:48,500 - parchment - INFO - 4114 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:01:48,501 - parchment - INFO - 4114 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:01:48,503 - parchment - INFO - 4114 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 15:01:48,505 - parchment - INFO - 4114 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:02:13,835 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:02:13,866 - parchment - INFO - 4114 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 15:02:13,867 - parchment - INFO - 4114 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 15:02:13,869 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:02:13,870 - parchment - INFO - 4114 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:02:13,872 - parchment - INFO - 4114 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:02:13,874 - parchment - INFO - 4114 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:02:13,876 - parchment - INFO - 4114 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:02:13,878 - parchment - INFO - 4114 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 15:03:09,057 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:09,089 - parchment - INFO - 4114 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 15:03:09,091 - parchment - INFO - 4114 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 15:03:09,093 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:09,095 - parchment - INFO - 4114 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:03:09,097 - parchment - INFO - 4114 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:03:09,099 - parchment - INFO - 4114 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:03:09,101 - parchment - INFO - 4114 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:03:09,103 - parchment - INFO - 4114 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 15:03:15,704 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:15,725 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:16,095 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:16,117 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:20,575 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:20,598 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:21,479 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:21,501 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:22,182 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:22,204 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:22,782 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:22,804 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:23,374 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:23,396 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:23,958 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:23,980 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:24,413 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:24,434 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:24,773 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:24,794 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:25,111 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:25,132 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:25,413 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:25,432 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:25,877 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:25,897 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:26,213 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:26,235 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:26,540 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:26,560 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:26,836 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:26,857 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:27,256 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:27,276 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:27,478 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:27,498 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:03:27,845 - parchment - INFO - 4114 - Line:51 - request path:  /add
+2014-01-08 15:03:27,865 - parchment - INFO - 4114 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:09:35,538 - parchment - INFO - 4251 - Line:51 - request path:  /add
+2014-01-08 15:09:35,580 - parchment - INFO - 4251 - Line:51 - request path:  /static/js/ckeditor.js
+2014-01-08 15:09:35,590 - parchment - INFO - 4251 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 15:09:35,593 - parchment - INFO - 4251 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 15:09:35,595 - parchment - INFO - 4251 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:09:35,598 - parchment - INFO - 4251 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:09:35,600 - parchment - INFO - 4251 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:09:35,602 - parchment - INFO - 4251 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:09:35,603 - parchment - INFO - 4251 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 15:09:49,410 - parchment - INFO - 4251 - Line:51 - request path:  /add
+2014-01-08 15:09:49,437 - parchment - INFO - 4251 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 15:09:49,438 - parchment - INFO - 4251 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 15:09:49,440 - parchment - INFO - 4251 - Line:51 - request path:  /static/js/ckeditor.js
+2014-01-08 15:09:49,441 - parchment - INFO - 4251 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:09:49,443 - parchment - INFO - 4251 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:09:49,444 - parchment - INFO - 4251 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:09:49,446 - parchment - INFO - 4251 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:09:49,448 - parchment - INFO - 4251 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 15:12:46,680 - parchment - INFO - 4298 - Line:51 - request path:  /add
+2014-01-08 15:12:46,725 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 15:12:46,732 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 15:12:46,734 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:12:46,736 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:12:46,737 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:12:46,739 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 15:12:46,741 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/ckeditor.js
+2014-01-08 15:12:46,742 - parchment - ERROR - 4298 - Line:1306 - Exception on /static/js/ckeditor.js [GET]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1253, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1213, in handle_http_exception
+    return handler(e)
+  File "app.py", line 40, in access_notfound
+    return render_template('errors.html', message='The requested URL was not found on the server. '), 404
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 124, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 61, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: errors.html
+2014-01-08 15:12:46,753 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:13:01,280 - parchment - INFO - 4298 - Line:51 - request path:  /add
+2014-01-08 15:13:01,316 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 15:13:01,318 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 15:13:01,319 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:13:01,320 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:13:01,322 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:13:01,323 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 15:13:01,324 - parchment - INFO - 4298 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:13:01,326 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:13:01,327 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/ckeditor.js
+2014-01-08 15:13:01,327 - parchment - ERROR - 4298 - Line:1306 - Exception on /static/js/ckeditor.js [GET]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1253, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1213, in handle_http_exception
+    return handler(e)
+  File "app.py", line 40, in access_notfound
+    return render_template('errors.html', message='The requested URL was not found on the server. '), 404
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 124, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 61, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: errors.html
+2014-01-08 15:13:01,438 - parchment - INFO - 4298 - Line:51 - request path:  /static/ckeditor/config.js
+2014-01-08 15:13:01,534 - parchment - INFO - 4298 - Line:51 - request path:  /static/ckeditor/skins/moono/editor.css
+2014-01-08 15:13:01,538 - parchment - INFO - 4298 - Line:51 - request path:  /static/ckeditor/lang/zh-cn.js
+2014-01-08 15:13:01,563 - parchment - INFO - 4298 - Line:51 - request path:  /static/ckeditor/styles.js
+2014-01-08 15:13:01,627 - parchment - INFO - 4298 - Line:51 - request path:  /static/ckeditor/contents.css
+2014-01-08 15:13:01,629 - parchment - INFO - 4298 - Line:51 - request path:  /static/ckeditor/skins/moono/icons_hidpi.png
+2014-01-08 15:13:12,649 - parchment - INFO - 4298 - Line:51 - request path:  /add
+2014-01-08 15:13:12,685 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 15:13:12,687 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 15:13:12,689 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:13:12,692 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:13:12,695 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:13:12,697 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 15:13:12,699 - parchment - INFO - 4298 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:13:12,702 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:13:12,704 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/ckeditor.js
+2014-01-08 15:13:12,704 - parchment - ERROR - 4298 - Line:1306 - Exception on /static/js/ckeditor.js [GET]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1253, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1213, in handle_http_exception
+    return handler(e)
+  File "app.py", line 40, in access_notfound
+    return render_template('errors.html', message='The requested URL was not found on the server. '), 404
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 124, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 61, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: errors.html
+2014-01-08 15:13:45,008 - parchment - INFO - 4298 - Line:51 - request path:  /add
+2014-01-08 15:13:45,044 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 15:13:45,045 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 15:13:45,046 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:13:45,048 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:13:45,049 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:13:45,050 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 15:13:45,052 - parchment - INFO - 4298 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:13:45,053 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:13:45,054 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/ckeditor.js
+2014-01-08 15:13:45,055 - parchment - ERROR - 4298 - Line:1306 - Exception on /static/js/ckeditor.js [GET]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1253, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1213, in handle_http_exception
+    return handler(e)
+  File "app.py", line 40, in access_notfound
+    return render_template('errors.html', message='The requested URL was not found on the server. '), 404
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 124, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 61, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: errors.html
+2014-01-08 15:13:58,285 - parchment - INFO - 4298 - Line:51 - request path:  /add
+2014-01-08 15:13:58,323 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 15:13:58,325 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 15:13:58,327 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:13:58,328 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:13:58,329 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:13:58,331 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 15:13:58,332 - parchment - INFO - 4298 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:13:58,334 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:13:58,335 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/ckeditor.js
+2014-01-08 15:13:58,335 - parchment - ERROR - 4298 - Line:1306 - Exception on /static/js/ckeditor.js [GET]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1253, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1213, in handle_http_exception
+    return handler(e)
+  File "app.py", line 40, in access_notfound
+    return render_template('errors.html', message='The requested URL was not found on the server. '), 404
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 124, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 61, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: errors.html
+2014-01-08 15:14:12,181 - parchment - INFO - 4298 - Line:51 - request path:  /add
+2014-01-08 15:14:12,213 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 15:14:12,214 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 15:14:12,215 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:14:12,217 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:14:12,219 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:14:12,220 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 15:14:12,222 - parchment - INFO - 4298 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:14:12,223 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:14:12,225 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/ckeditor.js
+2014-01-08 15:14:12,225 - parchment - ERROR - 4298 - Line:1306 - Exception on /static/js/ckeditor.js [GET]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1253, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1213, in handle_http_exception
+    return handler(e)
+  File "app.py", line 40, in access_notfound
+    return render_template('errors.html', message='The requested URL was not found on the server. '), 404
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 124, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 61, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: errors.html
+2014-01-08 15:14:26,645 - parchment - INFO - 4298 - Line:51 - request path:  /add
+2014-01-08 15:14:26,671 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 15:14:26,674 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 15:14:26,676 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:14:26,679 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:14:26,681 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:14:26,682 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 15:14:26,684 - parchment - INFO - 4298 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:14:26,685 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:14:26,687 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/ckeditor.js
+2014-01-08 15:14:26,687 - parchment - ERROR - 4298 - Line:1306 - Exception on /static/js/ckeditor.js [GET]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1253, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1213, in handle_http_exception
+    return handler(e)
+  File "app.py", line 40, in access_notfound
+    return render_template('errors.html', message='The requested URL was not found on the server. '), 404
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 124, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 61, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: errors.html
+2014-01-08 15:14:41,575 - parchment - INFO - 4298 - Line:51 - request path:  /add
+2014-01-08 15:14:41,603 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 15:14:41,605 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 15:14:41,607 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:14:41,609 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:14:41,612 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:14:41,613 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 15:14:41,615 - parchment - INFO - 4298 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:14:41,617 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:14:41,619 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/ckeditor.js
+2014-01-08 15:14:41,619 - parchment - ERROR - 4298 - Line:1306 - Exception on /static/js/ckeditor.js [GET]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1253, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1213, in handle_http_exception
+    return handler(e)
+  File "app.py", line 40, in access_notfound
+    return render_template('errors.html', message='The requested URL was not found on the server. '), 404
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 124, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 61, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: errors.html
+2014-01-08 15:16:13,649 - parchment - INFO - 4298 - Line:51 - request path:  /
+2014-01-08 15:16:55,423 - parchment - INFO - 4298 - Line:51 - request path:  /
+2014-01-08 15:16:55,465 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 15:16:55,467 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 15:16:55,469 - parchment - INFO - 4298 - Line:51 - request path:  /static/img/map.png
+2014-01-08 15:16:55,471 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:16:55,472 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:16:55,475 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:16:55,477 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.pin.js
+2014-01-08 15:16:58,493 - parchment - INFO - 4298 - Line:51 - request path:  /add
+2014-01-08 15:16:58,574 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/ckeditor.js
+2014-01-08 15:16:58,575 - parchment - ERROR - 4298 - Line:1306 - Exception on /static/js/ckeditor.js [GET]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1253, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1213, in handle_http_exception
+    return handler(e)
+  File "app.py", line 40, in access_notfound
+    return render_template('errors.html', message='The requested URL was not found on the server. '), 404
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 124, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 61, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: errors.html
+2014-01-08 15:17:08,197 - parchment - INFO - 4298 - Line:51 - request path:  /add
+2014-01-08 15:17:08,225 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/bootstrap.css
+2014-01-08 15:17:08,226 - parchment - INFO - 4298 - Line:51 - request path:  /static/css/parchment.css
+2014-01-08 15:17:08,228 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.min.js
+2014-01-08 15:17:08,229 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.min.js
+2014-01-08 15:17:08,231 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/bootstrap.js
+2014-01-08 15:17:08,232 - parchment - INFO - 4298 - Line:51 - request path:  /static/ckeditor/ckeditor.js
+2014-01-08 15:17:08,233 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/jquery.js
+2014-01-08 15:17:08,235 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/ckeditor.js
+2014-01-08 15:17:08,235 - parchment - ERROR - 4298 - Line:1306 - Exception on /static/js/ckeditor.js [GET]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1253, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1213, in handle_http_exception
+    return handler(e)
+  File "app.py", line 40, in access_notfound
+    return render_template('errors.html', message='The requested URL was not found on the server. '), 404
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 124, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 61, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: errors.html
+2014-01-08 15:18:01,914 - parchment - INFO - 4298 - Line:51 - request path:  /add
+2014-01-08 15:18:01,954 - parchment - INFO - 4298 - Line:51 - request path:  /static/js/ckeditor.js
+2014-01-08 15:18:01,954 - parchment - ERROR - 4298 - Line:1306 - Exception on /static/js/ckeditor.js [GET]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1253, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/app.py", line 1213, in handle_http_exception
+    return handler(e)
+  File "app.py", line 40, in access_notfound
+    return render_template('errors.html', message='The requested URL was not found on the server. '), 404
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 124, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Python/2.7/site-packages/Jinja2-2.7.1-py2.7.egg/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Python/2.7/site-packages/Flask-0.9-py2.7.egg/flask/templating.py", line 61, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: errors.html
