@@ -1,8 +1,10 @@
 __author__ = 'livefun'
 
 import unittest
-from mock import Mock,MagicMock
+from mock import Mock
 from datetime import datetime
+from core import database
+database.db_session = Mock() 
 from core import models
 
 class TagTest(unittest.TestCase):
