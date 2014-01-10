@@ -32,7 +32,6 @@ class TagManager():
 class Blog():
 
     def __init__(self,title,tags,category,content,counts,update_time,public,created_time = datetime.now()):
-        self.created_time = created_time
         self.title = title
         self.tags = tags        
         self.category = category   
@@ -40,6 +39,10 @@ class Blog():
         self.counts = counts     
         self.update_time = update_time
         self.public = public     
+        self.created_time = created_time
+
+    def to_json():
+        return {"title":self.title,"tags":this.tags}
 
 class BlogManager():
 
