@@ -10,16 +10,15 @@ class BlogTag():
         self.name = name
         self.created_time = created_time
 
-
     def to_json(self,new_dict={}):
         result = {"name":self.name,"created_time":self.created_time}
-        for k in new_dict:
-            result[k] = new_dict.get(k)
         return result
 
 class TagManager():
+    def add(self,tag):
+        db.tag.insert(tag.to_json())
 
-    def dele(self,id):
+    def remove(self,id):
         db.tag.remove({"_id":id})
 
     def edit(self,id,name):
@@ -31,22 +30,26 @@ class TagManager():
 
 class Blog():
 
-    def __init__(self,title,tags,category,content,counts,update_time,public,created_time = datetime.now()):
+    def __init__(self,title,tags,category,content,public,created_time = datetime.now()):
         self.title = title
         self.tags = tags        
         self.category = category   
         self.content = content    
-        self.counts = counts     
-        self.update_time = update_time
+        self.counts = 0     
+        self.update_time = created_time
         self.public = public     
         self.created_time = created_time
 
     def to_json():
-        return {"title":self.title,"tags":this.tags}
+        return { "title":self.title,"tags":self.tags,"category":self.category,
+                "content":self.content,"counts":self.counts,"update_time":self.update_time,
+                "public":self.public,"created_time":self.created_time}
 
 class BlogManager():
+    def add(self,blog):
+        db.blog.insert(blog.to_json())
 
-    def dele(self,id):
+    def remove(self,id):
         db.blog.remove({"_id":id})
 
     def edit(self,id,title,tag,category,content,update_time = datetime.now()):
@@ -66,8 +69,14 @@ class BlogCategory():
         self.name = name
         self.created_time = created_time
 
+    def to_json():
+        return {"name":self.name,"created_time":self.created_time}
+
 class CategoryManager():
-    def dele(self,id):
+    def add(self,category):
+        db.category.insert(category.to_json())
+
+    def remove(self,id):
         db.category.remove({"_id":id})
 
     def edit(self,id,name):
