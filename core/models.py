@@ -59,7 +59,7 @@ class BlogManager():
         return db.blog.find_one({"_id":id})
 
     def get_by_tag(self,tag): 
-        return [blog for blog in db.blog.find({"tags":[tag]})]
+        return [ blog for blog in db.blog.find({"tags":[tag]})]
 
     def get_by_category(self,category): 
         return [blog for blog in db.blog.find({"category":category})]
