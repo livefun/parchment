@@ -1,6 +1,6 @@
-from pymongo import  Connection
+from pymongo import Connection
 
 
 def db_session():
-    exec('connection = %s' % Connection("localhost", 27017))
+    connection = Connection("localhost", 27017)
     return connection['blog']
