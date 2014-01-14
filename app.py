@@ -16,7 +16,6 @@ app.logger.setLevel(logging.DEBUG)
 app.logger.addHandler(handler)
 app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?R1'
 
-
 # load the extension
 principals = Principal(app)
 
