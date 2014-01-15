@@ -16,10 +16,9 @@
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="//cdnjs.bootcss.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+    <script src="//cdnjs.bootcss.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
     <![endif]-->
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/icon.png') }}">
-
 
     <!-- Fav and touch icons -->
 </head>
@@ -46,23 +45,31 @@
                     </a>
                 </li>
             </ul>
-            <h1>Parchment</h1>
+
+            <h1>
+                Parchment&nbsp;&nbsp;
+                <a href="/add">
+                    <span class="glyphicon-plus"></span>
+
+                </a>
+            </h1>
+
         </div>
-        <div id="main-container" class="container-fluid">{% block body %}{% endblock %}
-        </div> <!-- main-container--> 
-    <div class="footer">
-        <p>&copy; Livefun 2014</p>
+        <div id="main-container" class="container-fluid">{% block body %}{% endblock %}</div>
+        <!-- main-container-->
+        <div class="footer">
+            <p>&copy; Livefun 2014</p>
+        </div>
+
     </div>
 
-</div>
-
-<!-- Bootstrap core JavaScript
+    <!-- Bootstrap core JavaScript
     ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
-<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-<script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
-{% block javascript %}
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+    {% block javascript %}
 {% endblock %}
 </body>
 </body>

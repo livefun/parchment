@@ -7,27 +7,61 @@
         height:600px;
     };
 </style>
+
+<link href="{{ url_for('static', filename='css/jquery.tagsinput.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/jquery-ui.css') }}" rel="stylesheet">
+
+
+
+
+
 <div id="editor">
-    <form action="#" method="post">
-        <textarea cols="60" id="content" name="content" rows="30"></textarea>
-        <br>
-        <p class="test-center">
-        <button type="submit" class="btn btn-default">发布</button>
-        <button type="button" class="btn btn-default">预览</button>
-        </p>
-    </form>
+  <form action="#" method="post">
+
+    <div class="input-group">
+            <div class="input-group-btn">
+              <select name="hour" class="span">
+            <option value="00">00</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            </select>
+            </div>
+            <input type="text" class="form-control">
+          </div>
+    <br>
+    <textarea cols="60" id="content" name="content" rows="30"></textarea>
+    <br>
+    <p class="test-center">
+      <input id='tags_3' name="tags" type='text' class='tags'></p>
+    <button type="submit" class="btn btn-default">发布</button>
+    <button type="button" onClick=show() class="btn btn-default">预览</button>
+  </p>
+</form>
 </div>
+
 <!-- row marketing-->
 {% endblock %}
 {% block javascript %}
 <script src="{{ url_for('static', filename='ckeditor/ckeditor.js') }}"></script>
 <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
 <script src="{{ url_for('static', filename='js/ckeditor.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.tagsinput.js') }}"></script>
 
 <script>
     CKEDITOR.disableAutoInline = true;
     $( document ).ready( function() {
         $( '#content' ).ckeditor(); 
     } );
-</script> 
+
+    $(function() {
+      $('#tags_3').tagsInput({
+        width: 'auto',
+        //autocomplete_url:'test/fake_json_endpoint.html' 
+      });
+    });
+  function show(){
+    alert($("#tags_3").val())
+  }
+</script>
 {% endblock %}
