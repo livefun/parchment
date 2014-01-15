@@ -2,6 +2,7 @@
 from flask import render_template,  request,session ,Flask, current_app
 from flask_principal import Principal, Permission, UserNeed, RoleNeed, Identity, AnonymousIdentity, identity_changed, identity_loaded
 from datetime import datetime
+from core import models
 import simplejson as json
 
 from logging import Formatter
@@ -57,5 +58,43 @@ def index():
 def login():
     return render_template('add.html')
 
+@app.route('/atg/<name>', methods=['GET', 'POST'])
+def add_tag():
+    tag = models.BlogTag(name)
+    tm = models.TagManager()
+    tm.add(tag)
+    return "ok"
+
+@app.route('/rmtg/<id>', methods=['GET', 'POST'])
+def remove_tag():
+    tm = models.TagManager()
+    tm.remove(id)
+    return "ok"
+
+@app.route('/acategory/<name>', methods=['GET', 'POST'])
+def add_category():
+    ctgr = models.BlogCategory(name)
+    cm = models.CategoryManager()
+    cm.add(ctgr)
+    return "ok"
+
+@app.route('/rmcategory/<id>', methods=['GET', 'POST'])
+def remove_category():
+    cm = models.CategoryManager()
+    cm.remove(id)
+    return "ok"
+
+@app.route('/ablog', methods=['GET', 'POST'])
+def add_blog():
+    title = request.args.get('title')
+    tags = request.args.get('tags')
+    category = request.args.get('category')
+    content = request.args.get('content')
+    public = request.args.get('public')
+
+    blog = models.Blog(title,tags,category,content,public)
+    bm = models.BlogManager()
+    cm.add(blog)
+    return "ok"
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8090)
