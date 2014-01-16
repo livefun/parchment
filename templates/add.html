@@ -11,29 +11,24 @@
 <link href="{{ url_for('static', filename='css/jquery.tagsinput.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename='css/jquery-ui.css') }}" rel="stylesheet">
 
-
-
-
-
 <div id="editor">
-  <form action="#" method="post">
+  <form action="/ablog" method="post">
 
     <div class="input-group">
-            <div class="input-group-btn">
-              <select name="hour" class="span">
-            <option value="00">00</option>
-            <option value="01">01</option>
-            <option value="02">02</option>
-            <option value="03">03</option>
-            </select>
-            </div>
-            <input type="text" class="form-control">
-          </div>
+      <div class="input-group-btn">
+        <select name="category" class="span" style="height: 32px" onchange="changelocation(this.value)">
+          <option value="00">0000000000000</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+        </select>
+      </div>
+      <input type="text" name="title" class="form-control"></div>
     <br>
     <textarea cols="60" id="content" name="content" rows="30"></textarea>
     <br>
-    <p class="test-center">
-      <input id='tags_3' name="tags" type='text' class='tags'></p>
+
+    <input id='tags_3' name="tags" type='text' class='tags'>
     <button type="submit" class="btn btn-default">发布</button>
     <button type="button" onClick=show() class="btn btn-default">预览</button>
   </p>
@@ -63,5 +58,9 @@
   function show(){
     alert($("#tags_3").val())
   }
+
+  function changelocation(locationid){
+  alert(locationid)
+} 
 </script>
 {% endblock %}

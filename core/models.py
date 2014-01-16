@@ -40,7 +40,7 @@ class Blog():
         self.public = public     
         self.created_time = created_time
 
-    def to_json():
+    def to_json(self):
         return { "title":self.title,"tags":self.tags,"category":self.category,
                 "content":self.content,"counts":self.counts,"update_time":self.update_time,
                 "public":self.public,"created_time":self.created_time}
@@ -69,7 +69,7 @@ class BlogCategory():
         self.name = name
         self.created_time = created_time
 
-    def to_json():
+    def to_json(self):
         return {"name":self.name,"created_time":self.created_time}
 
 class CategoryManager():

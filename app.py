@@ -56,7 +56,8 @@ def index():
 
 @app.route('/add', methods=['GET', 'POST'])
 def login():
-    return render_template('add.html')
+    args = {"category":"","tags":[]}
+    return render_template('add.html',args=args)
 
 @app.route('/atg/<name>', methods=['GET', 'POST'])
 def add_tag():
@@ -86,15 +87,20 @@ def remove_category():
 
 @app.route('/ablog', methods=['GET', 'POST'])
 def add_blog():
-    title = request.args.get('title')
-    tags = request.args.get('tags')
-    category = request.args.get('category')
-    content = request.args.get('content')
-    public = request.args.get('public')
+    title = request.form.get('title',"")
+    tags = request.form.get('tags').split(',')
+    category = request.form.get('category',"")
+    content = request.form.get('content',"")
+    public = request.form.get('public',0)
 
+    app.logger.debug("**************************")
+    app.logger.debug("title:%s"%title)
+    app.logger.debug("tags:%s"%tags)
+    app.logger.debug("content:%s"%content)
+    app.logger.debug("**************************")
     blog = models.Blog(title,tags,category,content,public)
     bm = models.BlogManager()
-    cm.add(blog)
-    return "ok"
+    bm.add(blog)
+    return render_template('index.html')
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8090)
